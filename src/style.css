@@ -1,0 +1,145 @@
+* {
+  font-family: "Oswald", sans-serif;
+}
+
+body {
+  background: linear-gradient(315deg, rgb(34, 2, 42) 50%, rgb(0, 0, 0) 100%);
+  color: white;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 25px;
+  gap: 2px;
+}
+.navbar h1 {
+  font-size: 36px;
+}
+.navbar h1 span {
+  color: gold;
+}
+.navbar .left-nav {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+.navbar .left-nav a {
+  text-decoration: none;
+  color: white;
+}
+.navbar .right-nav {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+.navbar .right-nav a {
+  text-decoration: none;
+  color: white;
+}
+
+.category {
+  margin-top: 50px;
+}
+
+.row {
+  display: flex;
+}
+
+#myList {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 240px;
+  height: 320px;
+  display: flex;
+  flex-direction: row;
+  transition: transform 0.7s ease;
+}
+.card:hover {
+  transform: scale(1.5);
+  width: 540px;
+}
+.card:hover .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 15px;
+  width: 300px;
+}
+
+.image {
+  width: 240px;
+  height: 320px;
+}
+.image img {
+  width: 240px;
+  height: 320px;
+  border-radius: 15px;
+}
+
+.info {
+  display: none;
+  background-color: black;
+}
+.info p {
+  margin-left: 10%;
+}
+.info .title {
+  text-transform: uppercase;
+}
+.info button {
+  border-radius: 7.5px;
+  margin-left: 10%;
+  transition: transform 0.7s ease;
+}
+.info button:hover {
+  background-color: gold;
+  text-transform: uppercase;
+  transform: scale(1.5);
+}
+
+.login {
+  width: 220vh;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./assets/NetflixBackground.png);
+}
+.login .register {
+  background-color: grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  width: 30%;
+  opacity: 0.9;
+  border-radius: 10px;
+  margin-bottom: 100px;
+}
+.login .register .div {
+  display: flex;
+  gap: 20px;
+}
+.login .register button {
+  background-color: red;
+  color: white;
+  font-size: larger;
+  font-weight: bold;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.sorry {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
